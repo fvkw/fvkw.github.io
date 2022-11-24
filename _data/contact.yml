@@ -7,10 +7,10 @@
   type: telegram
   icon: 'fab fa-telegram'
   url:  'https://www.t.me/fvkwbot'                  # Fill with your Linkedin homepage
--
-  type: linkedin
-  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.linkedin.com/in/坤-陈-b50b4b252'                  # Fill with your Linkedin homepage
+# -
+#   type: linkedin
+#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+#   url:  'https://www.linkedin.com/in/坤-陈-b50b4b252'                  # Fill with your Linkedin homepage
 -
   type: email
   icon: 'fas fa-envelope'
@@ -19,7 +19,7 @@
 # Uncomment and complete the url below to enable more contact options
 -
   type: rss
-  icon: 'fas fa-rss'
+  icon: 'fa-solid fa-square-rss'
   noblank: true
   ulr: 'https://010914.xyz'
 # -
