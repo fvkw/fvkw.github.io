@@ -1,22 +1,109 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>fvkw.github.io/</id>
-  <title>Chirpy</title>
-  <subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle>
-  <updated>2022-11-24T15:53:19+08:00</updated>
+  <id>http://localhost:4000/</id>
+  <title>Cohen's Blog</title>
+  <subtitle>Welcome to my personal webpage!</subtitle>
+  <updated>2022-11-24T16:21:15+08:00</updated>
   <author>
-    <name>your_full_name</name>
-    <uri>fvkw.github.io/</uri>
+    <name>Cohen Chen</name>
+    <uri>http://localhost:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="fvkw.github.io/feed.xml"/>
-  <link rel="alternate" type="text/html" hreflang="en"
-    href="fvkw.github.io/"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="zh-CN"
+    href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator>
-  <rights> © 2022 your_full_name </rights>
+  <rights> © 2022 Cohen Chen </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>在性能倒退发生之前修复它们</title>
+    <link href="http://localhost:4000/posts/fixing-performance-regressions/" rel="alternate" type="text/html" title="在性能倒退发生之前修复它们" />
+    <published>2022-04-06T13:49:37+08:00</published>
+  
+    <updated>2022-04-06T13:49:37+08:00</updated>
+  
+    <id>http://localhost:4000/posts/fixing-performance-regressions/</id>
+    <content src="http://localhost:4000/posts/fixing-performance-regressions/" />
+    <author>
+      <name>Cohen Chen</name>
+    </author>
+
+  
+    
+    <category term="Code" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Netflix 有2.22亿用户，在 1700 多种设备上运行，从最先进的智能电视到低成本的移动设备。
+
+在 Netflix ，我们为我们的可靠性感到自豪，我们希望保持这种状态。为此，重要的是我们要防止显著的性能倒退到达生产应用程序。缓慢的滚动或延迟的渲染是令人沮丧的，并引发意外的导航。断断续续的播放会降低观看节目的乐趣。任何进入产品发行版的性能倒退都会降低用户体验，因此挑战在于在发布之前检测和修复这些倒退。
+
+这篇文章描述了 Netflix 的 TVUI 团队如何实现一个强大的策略，在性能异常发布之前快速、轻松地检测到它们————通常是在它们提交到代码库之前。
+
+我们所说的性能是什么意思？
+从技术上来说，“性能”指标是指那些与应用的响应性或延迟相关的指标，包括启动时间。
+
+但电视设备也往往比其他设备更受内存限制，因此在内存峰值时更容易崩溃——所以对于 Netflix 电视，我们实际...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Java命名规范</title>
+    <link href="http://localhost:4000/posts/java-name/" rel="alternate" type="text/html" title="Java命名规范" />
+    <published>2021-01-02T10:38:01+08:00</published>
+  
+    <updated>2021-01-02T10:38:01+08:00</updated>
+  
+    <id>http://localhost:4000/posts/java-name/</id>
+    <content src="http://localhost:4000/posts/java-name/" />
+    <author>
+      <name>Cohen Chen</name>
+    </author>
+
+  
+    
+    <category term="Code" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  【强制】所有编程相关的命名均不能以下划线或美元符号开始，也不能以下划线或美元符号结束。
+反例：MAX_COUNT / EXPIRED_TIME
+  【强制】抽象类命名使用 Abstract 或 Base 开头；异常类命名使用 Exception 结尾，测试类命名以它要
+测试的类的名称开始，以 Test 结尾。
+  【强制】类型与中括号紧挨相连来定义数组。
+正例：定义整形数组 int[] arrayDemo。
+反例：在 main 参数中，使用 String args[] 来定义。
+  【强制】POJO 类中的任何布尔类型的变量，都不要加 is 前缀，否则部分框架解析会引起序列化错误。
+说明：本文 MySQL 规约中的建表约定第 1 条，表达是与否的变量采用 is_xxx 的命名方式，所以需要在  设置从 is_xxx 到 xxx 的映射关系。
+反例：定义为基本数据类型 Boole...
+    </summary>
+  
+
+  </entry>
 
 </feed>
 

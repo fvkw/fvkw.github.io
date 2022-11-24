@@ -1,9 +1,9 @@
 
 
 {
-  "name": "Chirpy",
-  "short_name": "Chirpy",
-  "description": "A minimal, responsive, and powerful Jekyll theme for presenting professional writing.",
+  "name": "Cohen's Blog",
+  "short_name": "Cohen's Blog",
+  "description": "Welcome to my personal webpage!",
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png",
